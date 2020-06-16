@@ -103,7 +103,7 @@ const UiCtr = (() => {
     showScore: (e) => {
       
       let h;
-      e >= 4 ? h = '<h3 class="correction-title">Answer to failed questions</h3>' : h = '';
+      e >= 50 ? h = '<h3 class="correction-title">Answer to failed questions</h3>' : h = '';
       let html = 
       `
       <section class="section3">
@@ -243,7 +243,7 @@ const App = (() => {
       }
     });
     if (wrong){
-      if (scoreperc >= 4){
+      if (scoreperc >= 50){
         wrong.forEach(each => {
           let t = State.getQuestions();
           let h = t[each][1]

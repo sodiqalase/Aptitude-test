@@ -4,12 +4,12 @@ const client = contentful.createClient({
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
   accessToken: "pnnHBIR0sePphnO9bxYS_lYP53oHo85QzFKZ0QM9h64"
 });
-async function gg (){
-  let i = await client.getEntries({ content_type: "maths"});
-  console.log(i.items[0.].fields.mathsquiz);
-}
-// State Handler
-gg()
+// async function gg (){
+//   let i = await client.getEntries({ content_type: "maths"});
+//   console.log(i.items[0.].fields.mathsquiz);
+// }
+// // State Handler
+// gg()
 
 const State = (() => {
   const data = {
@@ -101,7 +101,7 @@ const UiCtr = (() => {
   return {
     showScore: (e) => {
       let h;
-      e >= 4 ? h = '<h3 class="correction-title">Answer to failed questions</h3>' : h = '';
+      e >= 50 ? h = '<h3 class="correction-title">Answer to failed questions</h3>' : h = '';
       let html = 
       `
       <section class="section3">
@@ -240,7 +240,7 @@ const App = (() => {
       }
     });
     if (wrong){
-      if (scoreperc >= 4){
+      if (scoreperc >= 50){
         wrong.forEach(each => {
           let t = State.getQuestions();
           let h = t[each][0]
