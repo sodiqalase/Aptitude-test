@@ -1,0 +1,682 @@
+@import basic_formating
+@import variables
+
+@font-face 
+  font-family: 'Light'
+  src: url('../fonts/FoundersGrotesk-Regular.woff2') format("woff2")
+  font-weight: bold
+  font-style: normal
+
+@font-face 
+  font-family: 'Header'
+  src: url('../fonts/UniviaPro-Regular.woff') format("woff")
+  font-weight: bold
+  font-style: normal
+
+@font-face 
+  font-family: 'Question'
+  src: url('../fonts/CircularAir-Book.woff2') format("woff2")
+  font-weight: bold
+  font-style: normal
+
+body
+  background: $pg
+  font-family: 'Header', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+
+
+.navigation
+  position: sticky
+  top: 0
+  left: 0
+  right: 0
+  background: $w
+  padding: 15px 0
+  box-shadow: $bs2
+  .container
+    max-width: 80vw
+    display: flex
+    .nath-link
+      .nathairdiva
+        color: $pgb
+        font-size: 22px 
+    .submit-answers
+      font-family: 'Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      margin-left: auto
+      font-weight: bold
+      color: $pgb
+      font-size: 14px
+      background: transparent
+      outline: none
+      border: 1px solid $pgb
+      padding: 7px 10px
+      border-radius: 5px
+      // box-shadow: $bs1
+      &:hover
+        background: $pgb
+        color: $w
+        border: 1px solid transparent
+.section1
+  // position: sticky
+  // top: 12vh
+  margin-top: 30px
+  .container
+    
+    .time-percent
+      
+      border-radius: 5px
+      background: $pgb
+      padding: 20px 20px
+      box-shadow: $pgs, $bs2
+      display: flex
+      max-width: 600px
+      margin: 0 auto
+      justify-content: space-between
+      .percent
+        flex-basis: 40%
+        .completed
+          color: $w
+          
+          .percent-completed
+            color: $y3
+            font-weight: bold
+        .progress-bar
+          margin-top: 5px
+          width: 80%
+          height: 15px
+          border: 1px solid $g3
+          border-radius: 3px
+          .indicator
+            width: 0%
+            height: 100%
+            border-top-right-radius: 0
+            border-bottom-right-radius: 0
+            background: $y3
+
+      .time
+        flex-basis: 40%
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        .time-remaining
+          font-weight: bold
+          color: $w
+        .time-value
+          font-weight: bold
+          color: $y3
+
+
+.section2
+  margin-top: 40px
+  .quiz-reading
+    color: $pt
+    text-align: justify
+    max-width: 80%
+    margin: 10px auto
+    margin-bottom: 20px
+  .container
+    .quiz-container
+      border-radius: 5px
+      border-top: 5px solid $pgb
+      background: $w
+      max-width: 850px
+      margin: 0 auto
+      padding: 40px 0
+      padding-bottom: 0
+      padding-top: 10px
+      box-shadow: $pgs, $bs1
+      .question
+        padding: 0 40px
+        font-family: 'Header', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        color: $g6
+        font-weight: bold
+        border-bottom: 1px solid $g2
+        padding-bottom: 10px
+        .question-number
+          color: $pk4
+        .total-questions
+          color: $pk4
+      .choose-appropriate
+        padding: 0 40px
+        color: $g4
+        margin-top: 10px
+      .quiz-question
+        font-family: 'Question', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        text-align: justify
+        padding: 0 40px
+        padding-right: 0
+        margin-top: 10px
+        color: $pgb 
+        max-width: 95%
+        word-wrap: break-word
+        font-size: 20px
+      .option-form
+        font-size: 18px
+        padding: 0 40px
+        margin-top: 20px
+        .form-group
+          display: flex
+          margin-top: 10px
+          &:first-child
+            margin-top: 0
+          .choice
+            align-self: start
+            box-shadow: $bs-inner2
+            display: block
+            position: relative
+            border: .5px solid $g2
+            min-width: 25px
+            flex-basis: 25px
+            height: 25px
+            outline: none
+            -webkit-appearance: none
+            background: $w
+            border-radius: 100%
+            &:before
+              content: ''
+              position: absolute
+              width: 45%
+              height: 45%
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%)
+              background: none
+              border-radius: 100%
+            &:checked:before
+              background: $pk3
+          label
+            max-width: 80%
+            font-family: 'Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            flex: 1
+            margin-left: 20px
+            // min-height: 0px
+            word-wrap: break-word
+            display: block
+            
+            color: $g5
+            
+
+      .prev-next
+        margin-top: 30px
+        // background: #f9f9f9
+        background: rgba(48, 200, 214, .05)
+        padding: 20px 40px
+        button
+          // background: $pgb
+          font-family: 'Header', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+          background: $pk3
+          border-radius: 5px
+          border: 1px solid transparent
+          box-shadow: $bs21
+          padding: 7px
+          color: $w
+          font-weight: bold
+          outline: none
+        .prev
+          color: $g5
+          border-color: none
+          background: $w
+          &:hover
+            background: $g1
+        .next
+          margin-left: 15px
+          &:hover
+            background: $pk4
+
+.section3
+  margin-bottom: 20px
+  margin-top: 50px
+  .container
+    .result-container
+      max-width: 850px
+      margin: 0 auto
+      border-top: 6px solid $pgb
+      background: $w
+      text-align: center
+      padding: 100px 30px
+      padding-top: 70px
+      border-radius: 5px
+      
+      box-shadow: $bs2
+      
+      
+      .thank-you
+        color: $pk3
+      .score-paragraph
+        margin-top: 30px
+        color: $g7
+        font-size: 20px
+        font-weight: bold
+        .result-value
+          color: $pk3
+      .reset
+        margin-top: 25px
+        background: $pgb
+        color: $w
+        padding: 7px 12px
+        border-radius: 5px
+        box-shadow: $bs2
+        font-family: 'Header', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        outline: none
+        border: none
+        &:hover
+          background: rgba(48, 200, 214,.7)
+      .correction-title
+        margin-top: 20px
+        color: $pk3
+      .correction-div
+        padding: 0 5%
+        text-align: left
+        margin-top: 20px
+        .correction-header
+          color: rgba(48, 200, 214,.7)
+          margin-bottom: 5px
+        .correction-answer
+          color: $g4
+          margin-bottom: 15px
+
+
+.space
+  margin-top: 30px
+        
+              
+          
+      
+
+
+
+
+
+@media (min-width: 1201px) 
+  .container 
+    max-width: 1024px
+    margin: 0 auto
+  
+
+  
+
+
+@media (max-width: 1200px) 
+  .container 
+    margin: 0 auto
+    max-width: 950px
+    
+    
+  
+
+
+@media (max-width: 900px) 
+  .choose-appropriate
+    
+    font-size: 15px !important
+  .quiz-reading
+    max-width: 90vw !important
+  .container 
+    max-width: 700px
+    margin: 0 auto
+  .section1
+    margin-top: 20px !important
+  .section2
+    margin-top: 25px !important
+    
+  .prev-next
+    margin-top: 10px !important
+  .option-form
+    margin-top: 10px !important
+
+  
+
+
+@media (max-width: 620px) 
+  .correction-title
+    font-size: 15px !important
+  .correction-div
+    .correction-header
+      font-size: 13px !important
+    .correction-answer
+      font-size: 12px !important
+
+  .container 
+    padding: 0 20px
+  .choose-appropriate
+    padding: 0 20px !important
+    
+    
+
+  .quiz-reading
+    font-size: 14px !important
+    max-width: 90vw !important
+  .result-container
+    padding: 60px 30px !important
+  .thank-you
+    font-size: 20px !important
+  .score-paragraph
+    font-size: 18px !important  
+  .navigation
+    background: $w
+    padding: 10px 0
+    
+    .container
+      .nath-link
+        align-self: center
+        
+        .nathairdiva
+          
+          font-size: 14px
+      .submit-answers
+        
+        font-size: 11px
+        
+        
+
+
+  .section1
+    // margin-top: 20px
+    .container
+      .time-percent
+        // border-radius: 5px
+        
+        // padding: 15px 20px
+        // box-shadow: $bs1
+        // display: flex
+        max-width: 80vw
+        // margin: 0 auto
+        // justify-content: space-between
+        .percent
+          flex-basis: 45%
+          font-size: 14px
+          .completed
+            // color: $g7
+            
+            .percent-completed
+              // color: $t5
+              // font-weight: bold
+          .progress-bar
+            margin-top: 5px
+            // width: 100%
+            // height: 15px
+            // border: 1px solid $g3
+            // border-radius: 3px
+            .indicator
+              // width: 50%
+              height: 100%
+              // border-top-right-radius: 0
+              // border-bottom-right-radius: 0
+              // background: $y4
+
+        .time
+          flex-basis: 45%
+          display: block
+          .time-remaining
+            // font-weight: bold
+            font-size: 14px
+            text-align: right
+            // color: $t5
+            
+          .time-value
+            text-align: right
+            font-weight: bold
+            // color: $g7
+
+
+  .section2
+    margin-top: 20px
+    .container
+      .quiz-container
+        // border-top: 3px solid $t5
+        // background: $w
+        max-width: 95vw
+        // margin: 0 auto
+        // padding: 40px 0
+        // padding-bottom: 0
+        // padding-top: 15px
+        // box-shadow: $bs2
+        .question
+          padding: 0 20px
+          // color: $t5
+          // font-weight: bold
+          // border-bottom: 1px solid $g2
+          // padding-bottom: 10px
+          font-size: 14px
+          .question-number
+            // color: $t5
+          .total-questions
+            // color: $t5
+        .quiz-question
+          padding: 0 20px
+          margin-top: 10px
+          // color: $g5  
+          font-size: 16px
+          text-align: justify
+          padding-right: 0px !important
+        .option-form
+          padding: 0 20px
+          margin-top: 10px
+          .form-group
+            display: flex
+            margin-top: 7px
+            &:first-child
+              margin-top: 0
+            .choice
+              // box-shadow: $bs-inner2
+              // display: block
+              // position: relative
+              // width: 25px
+              // height: 25px
+              // outline: none
+              // -webkit-appearance: none
+              // background: $w
+              // border-radius: 100%
+              &:before
+                // content: ''
+                // position: absolute
+                // width: 50%
+                // height: 50%
+                // top: 50%
+                // left: 50%
+                // transform: translate(-50%, -50%)
+                // background: none
+                // border-radius: 100%
+              &:checked:before
+                // background: $t5
+            label
+              // margin-left: 20px
+              // display: block
+              // color: $g5
+              
+
+        .prev-next
+          // margin-top: 10px
+          // background: #f9f9f9
+          padding: 20px 20px
+          button
+            // background: $g5
+            // border-radius: 5px
+            // border: 1px solid transparent
+            // box-shadow: $bs21
+            // padding: 7px
+            // color: $w
+            // font-weight: bold
+            // outline: none
+            font-size: 12px
+          .prev
+            color: $g5
+            border-color: none
+            background: $w
+            &:hover
+              background: $g1
+          .next
+            margin-left: 15px
+            &:hover
+              // background: $g6
+
+
+
+@media (max-width: 500px) 
+  .quiz-reading
+    font-size: 12px !important
+  .container 
+    padding: 0 20px
+
+  .choose-appropriate
+    padding: 0 20px !important
+    
+    font-size: 12px !important
+
+  
+    
+  
+  .navigation
+    // background: $w
+    padding: 10px 0
+    // box-shadow: $bs2
+    .container
+      max-width: 95vw
+      .nath-link
+        align-self: center
+        .nathairdiva
+          // color: $t5
+          font-size: 14px
+
+
+  .section1
+    margin-top: 20px
+    .container
+      .time-percent
+        border-radius: 5px
+        
+        padding: 15px 10px
+        // box-shadow: $bs1
+        // display: flex
+        // max-width: 600px
+        // margin: 0 auto
+        // justify-content: space-between
+        .percent
+          flex-basis: 45%
+          font-size: 12px
+          .completed
+            // color: $g7
+            
+            .percent-completed
+              // color: $t5
+              // font-weight: bold
+          .progress-bar
+            margin-top: 5px
+            width: 100%
+            height: 15px
+            // border: 1px solid $g3
+            border-radius: 3px
+            .indicator
+              // width: 50%
+              height: 100%
+              border-top-right-radius: 0
+              border-bottom-right-radius: 0
+              // background: $y4
+
+        .time
+          flex-basis: 45%
+          display: block
+          .time-remaining
+            font-weight: bold
+            font-size: 12px
+            text-align: right
+            // color: $t5
+            text-align: center
+          .time-value
+            text-align: center
+            font-weight: bold
+            // color: $g7
+
+
+  .section2
+    margin-top: 20px
+    .container
+      .quiz-container
+        // border-top: 3px solid $t5
+        // background: $w
+        // max-width: 850px
+        // margin: 0 auto
+        // padding: 40px 0
+        // padding-bottom: 0
+        // padding-top: 15px
+        // box-shadow: $bs2
+        .question
+          padding: 0 20px
+          // color: $t5
+          font-weight: bold
+          border-bottom: 1px solid $g2
+          padding-bottom: 10px
+          
+          .question-number
+            // color: $t5
+          .total-questions
+            // color: $t5
+        .quiz-question
+          padding: 0 20px
+          margin-top: 10px
+          // color: $g5  
+          font-size: 14px
+          
+          // text-align: left
+        .option-form
+          padding: 0 20px
+          
+          margin-top: 10px
+          .form-group
+            display: flex
+            margin-top: 7px
+            &:first-child
+              margin-top: 0
+            .choice
+              // box-shadow: $bs-inner2
+              // display: block
+              // position: relative
+              // width: 25px
+              // height: 25px
+              // outline: none
+              // -webkit-appearance: none
+              // background: $w
+              // border-radius: 100%
+              &:before
+                // content: ''
+                // position: absolute
+                // width: 50%
+                // height: 50%
+                // top: 50%
+                // left: 50%
+                // transform: translate(-50%, -50%)
+                // background: none
+                // border-radius: 100%
+              &:checked:before
+                // background: $t5
+            label
+              font-size: 14px
+              margin-left: 20px
+              display: block
+              // color: $g5
+              
+
+        .prev-next
+          margin-top: 10px
+          // background: #f9f9f9
+          padding: 20px 20px
+          button
+            // background: $g5
+            border-radius: 5px
+            border: 1px solid transparent
+            // box-shadow: $bs21
+            padding: 7px
+            // color: $w
+            font-weight: bold
+            outline: none
+            font-size: 12px
+          .prev
+            // color: $g5
+            border-color: none
+            // background: $w
+            &:hover
+              // background: $g1
+          .next
+            margin-left: 15px
+            &:hover
+              // background: $g6
