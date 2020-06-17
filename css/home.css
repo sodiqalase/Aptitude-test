@@ -172,7 +172,7 @@ body {
     font-family: "Header";
     font-size: 25px;
     text-align: center;
-    color: #fff;
+    color: #faf089;
     margin-bottom: 40px; }
   .howit .flex-c {
     max-width: 80%;
@@ -191,18 +191,19 @@ body {
         margin-bottom: 15px; }
 
 .howitt {
+  background: #f9fbfe;
   margin: 0 auto;
   padding: 40px 0;
   max-width: 100%; }
   .howitt .test-cat {
-    color: #30c8d6;
+    color: #319795;
     font-family: "Header";
     text-align: center;
     display: block; }
   .howitt .line {
-    height: 2px;
-    width: 50px;
-    background: #30c8d6;
+    height: 3px;
+    width: 80px;
+    background: #f6e05e;
     margin: 0 auto;
     margin-bottom: 30px; }
   .howitt .flex-c {
@@ -211,12 +212,13 @@ body {
     display: flex;
     justify-content: space-around; }
     .howitt .flex-c .ind-wrap1, .howitt .flex-c .ind-wrap2, .howitt .flex-c .ind-wrap3 {
+      box-shadow: 0 0px 8px -1px rgba(0, 0, 0, 0.3), 0 0px 6px -1px rgba(0, 0, 0, 0.3);
       flex-basis: 30%;
       margin-bottom: 15px;
-      padding: 6px;
+      padding: 16px;
       border-radius: 4px; }
       .howitt .flex-c .ind-wrap1 .ind, .howitt .flex-c .ind-wrap2 .ind, .howitt .flex-c .ind-wrap3 .ind {
-        background: #fff;
+        background: #2b546a;
         border-radius: 4px;
         z-index: 4;
         padding: 15px 0;
@@ -231,11 +233,12 @@ body {
           margin-top: 10px;
           display: inline-block;
           padding: 4px 10px;
-          color: #f6e05e;
+          color: #faf089;
           border-radius: 4px;
-          border: 2px solid #f6e05e; }
+          border: 2px solid #faf089; }
           .howitt .flex-c .ind-wrap1 .ind .ind-link:hover, .howitt .flex-c .ind-wrap2 .ind .ind-link:hover, .howitt .flex-c .ind-wrap3 .ind .ind-link:hover {
-            background: #f6e05e;
+            border: 2px solid #ecc94b;
+            background: #ecc94b;
             color: #fff; }
     .howitt .flex-c .ind-wrap1 {
       background: url("../images/Aare.png") no-repeat center center/cover; }
@@ -244,6 +247,7 @@ body {
     .howitt .flex-c .ind-wrap3 {
       background: url("../images/Reuss.png") no-repeat center center/cover; }
   .howitt .more {
+    padding: 5px 0;
     margin: 0 auto;
     max-width: 500px;
     text-align: center;
@@ -266,11 +270,23 @@ body {
 .footer {
   padding: 30px 0;
   padding-bottom: 20px;
-  margin-top: 40px;
   text-align: center;
   color: #fff;
   font-family: "Header";
   background: #2c7a7b; }
+  .footer .footer-socials {
+    max-width: 160px;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+    .footer .footer-socials .footer-group {
+      display: flex;
+      justify-content: space-between; }
+      .footer .footer-socials .footer-group .list-link {
+        width: 25px; }
+        .footer .footer-socials .footer-group .list-link svg {
+          color: #f7fafc; }
+          .footer .footer-socials .footer-group .list-link svg:hover {
+            color: #f6e05e; }
   .footer .footer-label {
     font-size: 16px;
     margin-bottom: 5px; }

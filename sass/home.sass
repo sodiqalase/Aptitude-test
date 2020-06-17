@@ -92,7 +92,7 @@ body
     font-family: 'Header'
     font-size: 25px
     text-align: center
-    color: $w
+    color: $y3
     margin-bottom: 40px
   .flex-c
     max-width: 80%
@@ -111,21 +111,21 @@ body
         margin-bottom: 15px
       
 .howitt
-  // background: rgba(48, 200, 214, .05)
+  background: $pg
   margin: 0 auto
   padding: 40px 0
   max-width: 100%
   .test-cat
-    color: $pgb
+    color: $t6
     font-family: 'Header'
     text-align: center
     
     
     display: block
   .line
-    height: 2px
-    width: 50px
-    background: $pgb
+    height: 3px
+    width: 80px
+    background: $y4
     margin: 0 auto
     margin-bottom: 30px
   .flex-c
@@ -134,17 +134,18 @@ body
     display: flex
     justify-content: space-around
     .ind-wrap1, .ind-wrap2 ,.ind-wrap3
+      box-shadow: 0 0px 8px -1px rgba(0, 0, 0, 0.3), 0 0px 6px -1px rgba(0, 0, 0, 0.3)
       flex-basis: 30%
       margin-bottom: 15px
-      padding: 6px
+      padding: 16px
       border-radius: 4px
       .ind 
-        background: $w
+        background: $pt
         border-radius: 4px
         z-index: 4
         // display: none 
         padding: 15px 0
-        // box-shadow: 0 0 10px rgba(0, 0, 0, .09)
+        
         flex-basis: 30%
         
         text-align: center
@@ -157,11 +158,13 @@ body
           margin-top: 10px
           display: inline-block
           padding: 4px 10px
-          color: $y4
+          color: $y3
+          
           border-radius: 4px
-          border: 2px solid $y4
+          border: 2px solid $y3
           &:hover
-            background: $y4
+            border: 2px solid $y5
+            background: $y5
             color: $w
             // border-color: transparent
     .ind-wrap1
@@ -171,6 +174,7 @@ body
     .ind-wrap3
       background: url('../images/Reuss.png') no-repeat center center/cover
   .more
+    padding: 5px 0
     margin: 0 auto
     max-width: 500px
     text-align: center
@@ -195,11 +199,25 @@ body
 .footer
   padding: 30px 0
   padding-bottom: 20px
-  margin-top: 40px
+  // margin-top: 40px
   text-align: center
   color: $w
   font-family: 'Header'
   background: $t7
+  .footer-socials
+    
+    max-width: 160px
+    margin: 0 auto
+    margin-bottom: 10px
+    .footer-group
+      display: flex
+      justify-content: space-between
+      .list-link
+        width: 25px
+        svg
+          color: $g1
+          &:hover
+            color: $y4
   .footer-label
     font-size: 16px
     margin-bottom: 5px

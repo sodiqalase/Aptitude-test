@@ -281,7 +281,7 @@ const App = (() => {
       UiCtr.getUiElements().questionNumber.textContent = State.getPosition() + 1;
       UiCtr.getUiElements().percentValue.textContent = `${State.calculatePercentage()}%`;
       UiCtr.getUiElements().indicator.style.width = `${(State.calculatePercentage())}%`;
-      TimeCtr.startTimer(7);
+      TimeCtr.startTimer(6);
 
     })
     
