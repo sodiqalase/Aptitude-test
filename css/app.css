@@ -307,7 +307,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
     .section3 .container .result-container .thank-you {
-      color: #fbb6ce; }
+      color: #319795; }
     .section3 .container .result-container .score-paragraph {
       margin-top: 30px;
       color: #4a5568;
@@ -317,7 +317,7 @@ body {
         color: #fbb6ce; }
     .section3 .container .result-container .reset {
       margin-top: 25px;
-      background: #30c8d6;
+      background: #319795;
       color: #fff;
       padding: 7px 12px;
       border-radius: 5px;
@@ -329,13 +329,13 @@ body {
         background: rgba(48, 200, 214, 0.7); }
     .section3 .container .result-container .correction-title {
       margin-top: 20px;
-      color: #fbb6ce; }
+      color: #f6e05e; }
     .section3 .container .result-container .correction-div {
       padding: 0 5%;
       text-align: left;
       margin-top: 20px; }
       .section3 .container .result-container .correction-div .correction-header {
-        color: rgba(48, 200, 214, 0.7);
+        color: #2c7a7b;
         margin-bottom: 5px; }
       .section3 .container .result-container .correction-div .correction-answer {
         color: #cbd5e0;
